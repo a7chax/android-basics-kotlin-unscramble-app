@@ -71,10 +71,6 @@ class GameViewModel : ViewModel() {
   }
 
 
-  override fun onCleared() {
-    super.onCleared()
-    Log.d("GameFragment", "GameViewModel destroyed!")
-  }
 
   fun nextWord() : Boolean {
     return if (currentWordCount.value!! < MAX_NO_OF_WORDS){
